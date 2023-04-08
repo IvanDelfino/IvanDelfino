@@ -1,9 +1,16 @@
-import { useState } from "react";
+import Me from "./components/Me";
+import { Container } from "@mui/material";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <div className="App">HOLA MUNDO</div>;
+  return (
+    <>
+      <Container>
+        <div className="centrado">
+          <Me />
+        </div>
+      </Container>
+    </>
+  );
 }
 
 export default App;
