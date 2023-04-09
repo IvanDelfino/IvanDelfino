@@ -1,13 +1,28 @@
+import { Chip } from "@mui/material";
 import React from "react";
-import Chip from "./Chip";
 
 const CarrouselChip = () => {
   return (
-    <div className="carrusel-tracker">
-      <Chip img="img" name="JS" />
-      <Chip img="img" name="JS" />
-      <Chip img="img" name="JS" />
-      <Chip img="img" name="JS" />
+    <div className="chips">
+      <Chip label="Texto Prueva" />
+      <Chip label="Texto Prueva" />
+      <Chip label="Texto Prueva" />
+      <Chip label="Texto Prueva" />
+      <Chip label="Texto Prueva" />
+      <Chip label="Texto Prueva" />
+      <Chip label="Texto Prueva" />
+      <Chip label="Texto Prueva" />
+      <Chip label="Texto Prueva" />
+      <Chip label="Texto Prueva" />
+      <Chip label="Texto Prueva" />
+      <Chip label="Texto Prueva" />
+      <Chip label="Texto Prueva" />
+      <Chip label="Texto Prueva" />
+      <Chip label="Texto Prueva" />
+      <Chip label="Texto Prueva" />
+      <Chip label="Texto Prueva" />
+      <Chip label="Texto Prueva" />
+      <Chip label="ESTE ES EL CHIP FINAL" />
     </div>
   );
 };

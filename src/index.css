@@ -12,7 +12,7 @@ html {
 }
 .centrado {
   height: 80vh;
-  min-height: fit-content;
+
   border: black;
   padding-top: 3rem;
 }
@@ -44,50 +44,34 @@ html {
   border: 1px lightgrey 1px;
   border-radius: 5px;
 }
-/* }
-.carrousel {
+
+.aboutMe {
   display: flex;
-  overflow: hidden;
+  justify-content: center;
   align-items: center;
-  margin: auto;
-  height: auto;
+  flex-direction: column;
+  row-gap: 1rem;
 }
-.carrousel .chip {
+
+.chips {
   display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: visible;
+  animation: 10s linear 1s infinite running slidein;
 }
-
-.carrousel::before {
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  content: "";
-  width: 30%;
-  height: 110px;
-  background-color: blue;
+.chips-cont {
+  overflow: hidden;
 }
-
-.carrousel::after {
-  position: absolute;
-  right: 0;
-  content: "";
-  width: 30%;
-  height: 110px;
-  background-color: red;
-}
-.carrousel .carrousel-tracker {
-  display: flex;
-  animation: scroll 15s linear infinite;
-  -webkit-animation: scroll 15s linear infinite;
-  width: (240px * 10);
-}
-
-@keyframes scroll {
+@keyframes slidein {
   0% {
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
+    transform: translateX(0%);
+  }
+  99.98% {
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(calc(-240px * 5));
-    -webkit-transform: translateX(calc(-240px * 5));
+    transform: translateX(0%);
   }
-} */
+}
