@@ -52,8 +52,10 @@ const Me = () => {
             <h5>Some of my skills...</h5>
           </Grid>
           <Grid item xs={12}>
-            <div className="chips-cont">
-              <CarrouselChip />
+            <div className="centrar">
+              <div className="chips-cont">
+                <CarrouselChip />
+              </div>
             </div>
           </Grid>
         </Grid>

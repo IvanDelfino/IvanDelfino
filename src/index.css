@@ -14,7 +14,7 @@ html {
   height: 80vh;
 
   border: black;
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 
 .full {
@@ -58,20 +58,30 @@ html {
   justify-content: start;
   align-items: center;
   flex-wrap: nowrap;
-  overflow: visible;
-  animation: 10s linear 1s infinite running slidein;
+  animation: 20s linear 1s infinite running slidein;
+  max-width: fit-content;
 }
 .chips-cont {
   overflow: hidden;
+  width: 50%;
 }
 @keyframes slidein {
-  0% {
+  /* 0% {
     transform: translateX(0%);
   }
-  99.98% {
+  25% {
     transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
   }
   100% {
     transform: translateX(0%);
+  } */
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }
